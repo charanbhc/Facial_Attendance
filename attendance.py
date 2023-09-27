@@ -3,7 +3,6 @@ import numpy as np
 import face_recognition
 import os
 from datetime import datetime
-#check
 
 path = '/Users/charanbhc/Projects/Facial_Attendance/images'
 images = []

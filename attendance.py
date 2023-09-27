@@ -5,7 +5,7 @@ import os
 from datetime import datetime
 #check
 
-path = '/Users/charanbhc/Downloads/Attendance_System/images'
+path = '/Users/charanbhc/Projects/Facial_Attendance/images'
 images = []
 personNames = []
 myList = os.listdir(path)
@@ -27,7 +27,7 @@ def faceEncodings(images):
 
 
 def attendance(name):
-    with open('/Users/charanbhc/Downloads/Attendance_System/Attendance.csv', 'r+') as f:
+    with open('/Users/charanbhc/Projects/Facial_Attendance/Attendance.csv', 'r+') as f:
         myDataList = f.readlines()
         nameList = []
         for line in myDataList:

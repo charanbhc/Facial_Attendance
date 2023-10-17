@@ -5,7 +5,7 @@ import os
 from datetime import datetime
 import time
 
-path = 'C:/Users/Ithagoni Sai Pavan/Attendance_System/images' 
+path = './images' 
 images = []
 personNames = []
 myList = os.listdir(path)
@@ -27,7 +27,7 @@ def faceEncodings(images):
 
 
 def attendance(name):
-    with open('C:/Users/Ithagoni Sai Pavan/Attendance_System/Attendance.csv', 'a') as f:
+    with open('./Attendance.csv', 'a') as f:
         time_now = datetime.now()
         tStr = time_now.strftime('%H:%M:%S')
         dStr = time_now.strftime('%d/%m/%Y')

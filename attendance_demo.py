@@ -5,7 +5,7 @@ import os
 from datetime import datetime
 import time
 
-path = 'C:/Users/Ithagoni Sai Pavan/Attendance_System/images'
+path = 'C:/Users/Ithagoni Sai Pavan/Attendance_System/images' #
 images = []
 personNames = []
 myList = os.listdir(path)

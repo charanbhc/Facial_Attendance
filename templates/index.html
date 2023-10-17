@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Facial Recognition Attendance</title>
+    <meta charset="UTF-8">
+    <title>Facial Attendance</title>
 </head>
 <body>
-    <h1>Facial Recognition Attendance</h1>
-    <form method="POST" enctype="multipart/form-data">
-        <input type="file" name="file" accept=".jpg, .jpeg, .png">
-        <input type="submit" value="Upload Image">
-    </form>
+    <h1>Facial Attendance System</h1>
+    <h2>Attendance Log</h2>
+    <table>
+        <tr>
+            <th>Image Name</th>
+            <th>Time</th>
+        </tr>
+        {% for entry in attendance_log %}
+        <tr>
+            <td>{{ entry.image_name }}</td>
+            <td>{{ entry.time }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <img src="{{ url_for('video_feed') }}" width="640" height="480">
 </body>
 </html>
